@@ -33,9 +33,9 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="#"><span class="mai-call text-primary"></span> + 52 (81) 1340 0000</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@eisei.com.mx</a>
+              <a href="#"><span class="mai-mail text-primary"></span> info@eisei.net.mx</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -141,62 +141,111 @@
         </div>
       </div>
     </div> <!-- .bg-light -->
-  </div> <!-- .bg-light -->
-
-  <div class="page-section">
+  </div> <!-- .bg-light --><div class="page-section">
     <div class="container">
-      <h1 class="text-center mb-5 wow fadeInUp">Interactua con los demos</h1>
-
+      <!-- Información General del Chatbot -->
+      <h1 class="text-center mb-5 wow fadeInUp">Información sobre el Chatbot</h1>
+      <div class="row">
+        <div class="col-lg-6 wow fadeInUp">
+          <div class="card shadow-sm p-4 mb-4">
+            <h4 class="text-primary">Ubicación del Chatbot</h4>
+            <p>
+              El chatbot se encuentra en la parte inferior derecha de la página. 
+              Es accesible a través de un botón flotante con un icono de burbuja de chat. 
+              Haciendo clic en él, se despliega la ventana de interacción.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp">
+          <div class="card shadow-sm p-4 mb-4">
+            <h4 class="text-primary">Configuración Personalizable</h4>
+            <p>
+              El chatbot cuenta con un icono de configuración en la parte superior 
+              derecha de su ventana. Al acceder, puedes:
+            </p>
+            <ul>
+              <li>Cambiar el tema del chat para interactuar sobre diferentes tópicos.</li>
+              <li>Modificar los colores del diseño del chatbot según tu preferencia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Demos Interactivos -->
+      <h1 class="text-center mb-5 wow fadeInUp">Interacción con Demos</h1>
+      <p class="text-center mb-4">
+        Experimenta cómo funciona el chatbot en diferentes áreas temáticas. 
+        Haz clic en los iconos de chat para iniciar una conversación.
+      </p>
       <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/cabezaiagen.jpg" alt="">
+              <img src="../assets/img/cabezaiagen.jpg" alt="IA Generativa">
               <div class="meta">
-                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline" ></span></a>
+                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">IA-Generativa</p>
-              <span class="text-sm text-grey">Interactua con un chatbot sobre IA-Generativa</span>
+              <p class="text-xl mb-0">IA Generativa</p>
+              <span class="text-sm text-grey">Interactúa con un chatbot sobre IA Generativa</span>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/derecho-mercantil-4-300x300.jpg" alt="">
+              <img src="../assets/img/derecho-mercantil-4-300x300.jpg" alt="Derecho Mercantil">
               <div class="meta">
-                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline" ></span></a>
+                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Derecho mercantil</p>
-              <span class="text-sm text-grey">Interactua con un chatbot sobre Derecho mercantil</span>
+              <p class="text-xl mb-0">Derecho Mercantil</p>
+              <span class="text-sm text-grey">Interactúa con un chatbot sobre Derecho Mercantil</span>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/neurolgia.jpg" alt="">
+              <img src="../assets/img/neurolgia.jpg" alt="Neurología">
               <div class="meta">
-                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline" ></span></a>
+                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Neurologia</p>
-              <span class="text-sm text-grey">Interactua con un chatbot sobre Neurologias</span>
+              <p class="text-xl mb-0">Neurología</p>
+              <span class="text-sm text-grey">Interactúa con un chatbot sobre Neurología</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card-doctor">
+            <div class="header">
+              <img src="../assets/img/Logistica-02-CG-1.jpg" alt="Logística Aduanera">
+              <div class="meta">
+                <a onclick="toggleChatbot()"><span class="mai-chatbubbles-outline"></span></a>
+              </div>
+            </div>
+            <div class="body">
+              <p class="text-xl mb-0">Logística Aduanera</p>
+              <span class="text-sm text-grey">Interactúa con un chatbot sobre Logística Aduanera</span>
             </div>
           </div>
         </div>
       </div>
+              
+      <!-- Botón para Abrir el Chatbot -->
+      <div class="text-center mt-4">
+        <a href="#chatbotWindow" class="btn btn-primary" onclick="toggleChatbot()">Abrir Chatbot</a>
+      </div>
     </div>
   </div>
+  
 
   
     <!-- Botón flotante redondo para el chatbot -->
-  <button class="chatbot-button" onclick="toggleChatbot()">
+  <button class="chatbot-button"  onclick="toggleChatbot()">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 3C7.589 3 4 6.589 4 11C4 13.112 5.007 15.056 6.645 16.364L6 21L10.636 20.355C11.944 21.993 13.888 23 16 23C20.411 23 24 19.411 24 15C24 10.589 20.411 7 16 7C15.074 7 14.194 7.245 13.414 7.684L11.586 5.856C12.025 5.076 12.27 4.196 12.27 3.27H12Z" fill="#ffffff"/>
       </svg>
@@ -223,43 +272,42 @@
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Empresa</h5>
           <ul class="footer-menu">
-            <li><a href="#">Sobre Nostros</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Editorial Team</a></li>
-            <li><a href="#">Protection</a></li>
+            <li><a href="https://www.eisei.net.mx/">Sobre Nostros</a></li>
+
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
-          <h5>More</h5>
+          <h5>Contacto Monterrey</h5>
           <ul class="footer-menu">
-            <li><a href="#">Terms & Condition</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Join as Doctors</a></li>
+            <li><a> Av. Revolución Sur 643-10</a></li>
+            <li><a >Jardín Español C.P. 64820</a></li>
+            <li><a >Monterrey, NL. México.</a></li>
+            <li><a >T: + 52 (81) 1340 0000</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Contact</h5>
-          <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-          <a href="#" class="footer-link">701-573-7582</a>
-          <a href="#" class="footer-link">healthcare@temporary.net</a>
+          <h5>Contacto Durango</h5>
+          <ul class="footer-menu">
+          <li><a> Consuelo Pérez Gavilán No.106</a></li>
+          <li><a >Col. Del Maestro C.P. 34240</a></li>
+          <li><a >Durango, Dgo. México.</a></li>
+          <li><a >T: 01 (618) 810 4203</a></li>
+        </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
         
-          <h5>Social Media</h5>
+          <h5>Redes Sociales</h5>
           <div class="footer-sosmed mt-3">
-            <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+            <a href="https://www.facebook.com/eisei.innovation/" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+            <a href="https://x.com/eiseiinnovation" target="_blank"><span class="mai-logo-twitter"></span></a>
+            <a href="https://www.linkedin.com/company/grupo-empresarial-eisei/" target="_blank"><span class="mai-logo-linkedin"></span></a>
           </div>
         </div>
       </div>
 
       <hr>
 
-      <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
+      <p id="copyright">Contactanos <a href="info@eisei.net.mx" target="_blank">EISEI</a>. Comunicate con nosotros para solicitar información.</p>
     </div>
   </footer>
 
